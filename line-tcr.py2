@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 
-import TOBY
-from TOBY.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
-cl = TOBY.LINE()
+cl = LINETCR.LINE()
 cl.login("token = " Em8AfcKHSkqiV2xcAl9b.lh9WH2MI6ZxzRP9ZZtzUcW.QZjncugoI9DJRBtLlOOiUqnHGPek1nnEAnDJxJjCw48= ")
 cl.loginResult()
 
-ki = TOBY.LINE()
+ki = LINETCR.LINE()
 ki.login(token = " EmnfAnWtSCNjcrwHez54.Taq4zRpoy8MaIjFbl09Fba.InKJsHOgG/niphRh5G2TxMiZpRJ26tEFnIiMlRM7h9s= ")
 ki.loginResult()
 
-ki2 = TOBY.LINE()
+ki2 = LINETCR.LINE()
 ki2.login(token = " EmuHDFyiFEDMyPMyEByd.2LoE6VMBQSoJV0xj2s8CRq.ZsKZghWCsgHZr6uLcKtWBeJnQQLXsyf0H8mrbxQR31Y= ")
 ki2.loginResult()
 
@@ -353,7 +353,8 @@ def bot(op):
             elif "Bot2" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ki2mid}
-                ki2.sendMessage(msg)
+                ki2.sendMessage(msg)
+
             elif msg.text in ["Bot1 Gift","Bot1 gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
@@ -1607,7 +1608,8 @@ def bot(op):
                 text = profile.displayName + "􀜁􀅔􏿿"
                 ki.sendText(msg.to, text)
                 profile = ki3.getProfile()
-                text = profile.displayName + "􀜁􀅔􏿿"
+                text = profile.displayName + "􀜁􀅔􏿿"
+
 #-------------------------------------------------------------------
 
 #------------------------------------------------------------------	
