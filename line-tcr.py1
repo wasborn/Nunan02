@@ -16,10 +16,6 @@ ki = LINETCR.LINE()
 ki.login(token = " EmQfflvCBvBE4HqGKenb.SK7Te9gWYUQsywhOX1wfYW.Icmu4xL/aMkJsPjKMKIsR+hSOZsbiA0kzl2AsCL4PME= ")
 ki.loginResult()
 
-kk = ks = ki
-kc = ka = ki
-cl
-
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
