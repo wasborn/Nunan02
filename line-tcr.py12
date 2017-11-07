@@ -9,15 +9,15 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="Emq0h17Bk0z9ZpRgPnDc.ggZ3LaX96pDQplX2qf9Fxa.hyo3tCM5Le0z8QV072KPmzcELVjAco8x+IUapKRJa58=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="EmArAyYdKxapYa5IU2pf./oUE81Qbz/mNj+p6ano5RW.z2vEjeN6ai0uEuTSj4oQpUV8+SXYcJ4ZKX9DWxcA9Cw=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(qr=True)
+kk.login(token="Em5JJmMl57GizZBrgxqb.SK7Te9gWYUQsywhOX1wfYW.U+JabFXVOopNMfYQlOdF8GDf/c0nHNAa7rU2bzcLr00=")
 kk.loginResult()
 
 kk = ks = ki
