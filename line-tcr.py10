@@ -21,7 +21,7 @@ kk.login(token="EmmHd7Ww5LGidu8Nckca.otjypLFkvzc+H16E2qyN/G.peuZU4Fn+4m/AYZ+6nDl
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EmoFeCvIN5y7RlO0Uoid.2LoE6VMBQSoJV0xj2s8CRq.uwQaiQbuffhFDWyZzXv/BkRCLauciPGePyRphiuEY/8="
+ks.login(token="EmoFeCvIN5y7RlO0Uoid.2LoE6VMBQSoJV0xj2s8CRq.uwQaiQbuffhFDWyZzXv/BkRCLauciPGePyRphiuEY/8=")
 ks.loginResult()
 
 print "login success"
@@ -1467,6 +1467,18 @@ def bot(op):
                 cl.sendText(msg.to, "Access speed waiting")
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
+		start = time.time()
+                ki.sendText(msg.to, "Access speed waiting")
+                elapsed_time = time.time() - start
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))   
+		start = time.time()
+                kk.sendText(msg.to, "Access speed waiting")
+                elapsed_time = time.time() - start
+                kk.sendText(msg.to, "%sseconds" % (elapsed_time))   
+		start = time.time()
+                ks.sendText(msg.to, "Access speed waiting")
+                elapsed_time = time.time() - start
+                ks.sendText(msg.to, "%sseconds" % (elapsed_time))   								
 #-----------------------------------------------             
         if op.type == 19:
             try:
