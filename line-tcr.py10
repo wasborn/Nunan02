@@ -21,7 +21,7 @@ kk.login(token="EmmHd7Ww5LGidu8Nckca.otjypLFkvzc+H16E2qyN/G.peuZU4Fn+4m/AYZ+6nDl
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(oken=" EmoFeCvIN5y7RlO0Uoid.2LoE6VMBQSoJV0xj2s8CRq.uwQaiQbuffhFDWyZzXv/BkRCLauciPGePyRphiuEY/8=")
+ks.login(token="EmoFeCvIN5y7RlO0Uoid.2LoE6VMBQSoJV0xj2s8CRq.uwQaiQbuffhFDWyZzXv/BkRCLauciPGePyRphiuEY/8="
 ks.loginResult()
 
 print "login success"
