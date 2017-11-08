@@ -21,7 +21,7 @@ kk.login(token=" EmIZ2blVyJi5NhADTQMc.sZv3N17Hnvf3rV+iVgX3la.YIOVmSil2AREeQl5jHI
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token== EmPzDZgUrhHk9tTHYuZd.WhaXXUtVTTGNCzAQZKoahq.0jIaFhvwQfDQQ6K2UhGMWJMuOiMG40kNktv5A/PZYwU= ")
+ks.login(token=" EmPzDZgUrhHk9tTHYuZd.WhaXXUtVTTGNCzAQZKoahq.0jIaFhvwQfDQQ6K2UhGMWJMuOiMG40kNktv5A/PZYwU= ")
 ks.loginResult()
 
 kc = LINETCR.LINE()
