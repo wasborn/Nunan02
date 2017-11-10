@@ -94,12 +94,19 @@ helpMessage2 ="""-鈿犫劉 -
 	
 """
 KAC = [cl,ki,kk,ks,kc,ka]
+KAB1 = ki.getProfile().mid
+KAB2 = kk.getProfile().mid
+KAB3 = ks.getProfile().mid
+KAB4 = kc.getProfile().mid
+KAB5 = ka.getProfile().mid
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 kimid = kk.getProfile().mid
 ki2mid = ks.getProfile().mid
 Cmid = kc.getProfile().mid
 Emid = ka.getProfile().mid
+
+Bots=[mid,Amid,kimid,ki2mid,Cmid,Emid]
 admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
