@@ -9,19 +9,19 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="Emf1yDZ2feI8vrQrvMwb.lh9WH2MI6ZxzRP9ZZtzUcW.P2VOkwBeTAwVLJggN2nF10llLbJRs7cTVh+itiiSQJw=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmvMBNNd54gmmu0Ud824.Taq4zRpoy8MaIjFbl09Fba.L4spNpqOclHYi28l64KZRKZuc3k9r84/yQLzu92Lpd0=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EmmHd7Ww5LGidu8Nckca.otjypLFkvzc+H16E2qyN/G.peuZU4Fn+4m/AYZ+6nDlKc7Xxa0MN5u+1iqBm8Vg2Bs=")
+kk.login(qr=True)
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EmoFeCvIN5y7RlO0Uoid.2LoE6VMBQSoJV0xj2s8CRq.uwQaiQbuffhFDWyZzXv/BkRCLauciPGePyRphiuEY/8=")
+ks.login(qr=True)
 ks.loginResult()
 
 print "login success"
