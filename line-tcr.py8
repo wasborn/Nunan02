@@ -35,7 +35,7 @@ ka.loginResult()
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""By.Nunu   
+helpMessage ="""💓selfbot💓น้อง.ชิ
   
 👊[Id]: ~÷~
 👊[Mid]: ~÷~
@@ -83,6 +83,7 @@ helpMessage ="""By.Nunu
 👊[Gn: "name"]: "Change name Group"
 👊[NK: "Name"]: ~÷~
 👊[Dead]: "Kick Blacklist"
+         💓  By.Susu   💓
 
 """
 helpMessage2 ="""-⚠™ -
@@ -143,9 +144,9 @@ wait = {
     'leaveRoom':False,
     'timeline':False,
     'autoAdd':False,
-    'message':"Thanks add me😊😊😊",
+    'message':"Thanks add 💓Love💓 http://line.me/ti/p/ShgslAPyYS  ",
     "lang":"JP",
-    "comment":"Auto like 👉Tamii👈",
+    "comment":"Auto like 💓Love💓 http://line.me/ti/p/ShgslAPyYS  ",
     "likeOn":False,
     "commentOn":False,
     "commentBlack":{},
