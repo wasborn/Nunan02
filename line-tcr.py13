@@ -9,11 +9,11 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EmWIqrHbof1NcWReccvd.3CZ34WXllu3x+t++XFoWZq.m4fJgTxk6GoEihs+88TdhEEJ/qZXGN0ZT4sfqAS9ExA=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmqKyhbBSCRY2TyDNZTe.rx7UAynU/8vO/EbP4AqC7G.cjUS5Gb5Zo5on2kRpg/Wy82T0iV8qaMgfK6B+iP6gUY=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = ks = ki
@@ -23,63 +23,64 @@ cl
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""By.Nunu:Bot v2.1 
+helpMessage ="""🇹🇭Selfbot By.Susu 🇹🇭
   
-👊[Id]: ~÷~
-👊[Mid]: ~÷~
-👊[All mid]:
-👊[Me]: ~÷~
-👊[K1/K2/K3/]: "Contact"
-👊[K1/K2/K3 fuck:]: "Kick kicker"
-👊[Group Id]: "Id Me Group"
-👊[TL : "Text"]: "Auto status TL"
-👊[Clock :]: "Name Clock"
-👊[Up clock]: "Up date Clock"
-👊[Name : 'text']: "Name me"
-👊[MIC]: "mid"]: "Contact share"
-👊[Reject]: " invite"]: "Reject invite"
-👊[Massage add: "text"]: ~÷~
-👊[Add confirmasi]: ~÷~
-👊[Comment set : "Text"]: ~÷~
-👊[Comment check]: ~÷~
-👊[Clock: on]: "Clock name on"
-👊[Clock: off]: "Clock name off"
-👊[Ban]: "Add blacklist"
-👊[Unban]: "Dalate blacklist"
-👊[Banlist]: "Check blacklist"
+🌟[Id]: ~÷~
+🌟[Mid]: ~÷~
+🌟[All mid]:
+🌟[Me]: ~÷~
+🌟[K1/K2/K3/]: "Contact"
+🌟[K1/K2/K3 fuck:]: "Kick kicker"
+🌟[Group Id]: "Id Me Group"
+🌟[TL : "Text"]: "Auto status TL"
+🌟[Clock :]: "Name Clock"
+🌟[Up clock]: "Up date Clock"
+🌟[Name : 'text']: "Name me"
+🌟[MIC]: "mid"]: "Contact share"
+🌟[Reject]: " invite"]: "Reject invite"
+🌟[Massage add: "text"]: ~÷~
+🌟[Add confirmasi]: ~÷~
+🌟[Comment set : "Text"]: ~÷~
+🌟[Comment check]: ~÷~
+🌟[Clock: on]: "Clock name on"
+🌟[Clock: off]: "Clock name off"
+🌟[Ban]: "Add blacklist"
+🌟[Unban]: "Dalate blacklist"
+🌟[Banlist]: "Check blacklist"
 
--⚠™[ƧЄƬ]:ƇƠMMƛƝƊƧ ƧЄƬ. -
-👊[Contact: on/off]: 
-👊[Auto join: on/off]: 
-👊[Cancel Invite: 1 on/off]:
-👊[Auto share: on/off]:
-👊[Auto leave: on/off]: 
-👊[Comment: on/off]: 
-👊[Auto add: on/off]: 
-👊[Auto like: on/off]: 
+-🌤️™[ƧЄƬ]:ƇƠMMƛƝƊƧ ƧЄƬ. -
+🌥️[Contact: on/off]: 
+🌥️[Auto join: on/off]: 
+🌥️[Cancel Invite: 1 on/off]:
+🌥️[Auto share: on/off]:
+⛅[Auto leave: on/off]: 
+🌨️[Comment: on/off]: 
+⛅[Auto add: on/off]: 
+⛅[Auto like: on/off]: 
 	
--⚠™ƇƠMMƛƝƊƧ ƖƝ ƬHЄ ƓƦƠƲƤƧ. ~~~~
-👊[Ban " @Tag]: 
-👊[Unban " @Tag]: 
-👊[Urlon]: "Open urL"
-👊[ปิดลิ้งค์]: "Closed urL"
-👊[ลิ้งค์]: " Check urL room"
-👊[Ginfo]: "~÷~ data room"
-👊[Invite: "mid"]: 
-👊[Say: "Text"]: "Kicker talk"
-👊[Cancel]: "Cancel invite"
-👊[Gn: "name"]: "Change name Group"
-👊[NK: "Name"]: ~÷~
-👊[Dead]: "Kick Blacklist"
-       By.Nunu
-      http://line.me/ti/p/ShgslAPyYS  
+-💕™ƇƠMMƛƝƊƧ ƖƝ ƬHЄ ƓƦƠƲƤƧ. ~~~~
+☁️[Ban " @Tag]: 
+❄️[Unban " @Tag]: 
+❄️[Urlon]: "Open urL"
+❄️[ปิดลิ้งค์]: "Closed urL"
+❄️[ลิ้งค์]: " Check urL room"
+❄️[Ginfo]: "~÷~ data room"
+❄️[Invite: "mid"]: 
+❄️[Say: "Text"]: "Kicker talk"
+❄️[Cancel]: "Cancel invite"
+❄️[Gn: "name"]: "Change name Group"
+❄️[NK: "Name"]: ~÷~
+❄️[Dead]: "Kick Blacklist"
+
+       Selfbot.💕น้องชิ💕    
+       
 """
 helpMessage2 ="""-⚠™ -
 
-👊[ƤƦƠƬЄƇƬ: ƠƝ/ƠƑƑ]: 
-👊[ƁԼƠƇƘ ƲƦԼ: ƠƝ/ƠƑƑ]: 
-👊[ƝƛMЄԼƠƇƘ: ƠƝ/ƠƑƑ]: 
-👊[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
+🌠[ƤƦƠƬЄƇƬ: ƠƝ/ƠƑƑ]: 
+🌠[ƁԼƠƇƘ ƲƦԼ: ƠƝ/ƠƑƑ]: 
+🌠[ƝƛMЄԼƠƇƘ: ƠƝ/ƠƑƑ]: 
+👊🌠[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
 	
 """
 KAC = [cl,ki,kk,ks,kc,ka]
