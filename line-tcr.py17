@@ -618,7 +618,7 @@ def bot(op):
                                     'MSGTPL': '3'}
                 msg.text = None
                 ks.sendMessage(msg)
-            elif msg.text in ["cancel","Cancel","ยกเชิน"]:
+            elif msg.text in ["cancel","Cancel","ยกเชิน","C.","c."]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)		    
                     if group.invitee is not None:
@@ -635,7 +635,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Impossible use besides")
 
-            elif msg.text in ["K1 cancel","1 cancel","1 ยกเชิน"]:
+            elif msg.text in ["K1 cancel","1 cancel","1 ยกเชิน","c.1","C.1"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     if group.invitee is not None:
