@@ -138,6 +138,7 @@ AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5
 adminsA = admins + Rx3 + Rx5
 
 omikuzi = ["大吉","中吉","小吉","末吉","大凶","凶"
+
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -509,7 +510,7 @@ def bot(op):
                 midd = msg.text.replace("Invite:","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "แอด" == msg.text:
+            elif "Me" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
