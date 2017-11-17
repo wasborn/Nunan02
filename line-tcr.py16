@@ -126,7 +126,6 @@ protection = []
 autocancel = {}
 autoinvite = []
 autoleaveroom = []
-
 admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
 Rx5 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
 Rx4 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
