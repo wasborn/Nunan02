@@ -125,7 +125,7 @@ Imid = kj.getProfile().mid
 Jmid = kl.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid]
-admin=["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+admin=["u186cf7940c7de8f76a3cbc76405f5f5c"]
 
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
@@ -153,7 +153,7 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+admins = ["u186cf7940c7de8f76a3cbc76405f5f5c"]
 Rx10 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
 Rx9 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
 Rx8 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
@@ -2136,7 +2136,7 @@ def bot(op):
                 msgs+="\n\nTotal %i Blocked User(s)" % len(kontak)
                 cl.sendText(msg.to, msgs)                                
                 
-            elif msg.text in ["K."]:
+            elif msg.text in ["Masuk"]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2293,7 +2293,7 @@ def bot(op):
 
 #-----------------------------------------------
 	
-            elif msg.text in ["B."]:
+            elif msg.text in ["Keluar"]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
