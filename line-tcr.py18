@@ -510,7 +510,7 @@ def bot(op):
                 midd = msg.text.replace("Invite:","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "Me" == msg.text:
+            elif "แอด" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
@@ -1175,7 +1175,7 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg) 
-            elif "K." in msg.text:
+            elif "Kicker" in msg.text:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1250,7 +1250,7 @@ def bot(op):
                   ks.updateGroup(G)
                   Ticket = ka.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["B."]:
+            elif msg.text in ["Bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:			
@@ -1774,7 +1774,7 @@ def bot(op):
                     for mi_d in wait["blacklist"]:
                         mc += "・" +cl.getContact(mi_d).displayName + "\n"
                     cl.sendText(msg.to,mc)
-            elif msg.text in ["Blist","เชคดำ"]:
+            elif msg.text in ["Blist","เชคดำ1"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.members]
