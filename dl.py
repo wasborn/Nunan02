@@ -6,27 +6,27 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(token="EmmM31C6Zq6EWRNup9Yb.lh9WH2MI6ZxzRP9ZZtzUcW.vfl7l2/eCQPSH+3GE9UyWSczIcGSDQUcTD5nRGOignc=")
+cl.login(token="EmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")
 cl.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="Em64SBKMIX41SeMCKQb4.Taq4zRpoy8MaIjFbl09Fba.Jba5o2kqfG1DSlYTlcQ/KACbfy3ix+Yn/ssOJdxQe6k=")
+kk.login(token="EmaVvITzZCcQjo7W3PJb.SK7Te9gWYUQsywhOX1wfYW.quWHfPMQMRB0oZQ0uPxOCxzkWuEojOkAkiHRKhR6eZA=")
 kk.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Em9VIKsTiaGIlsZcFPI9.m+QWcDCzbafjVosqZ/m5kq.ohwyKEn/Ge0jdJDuT4PnAX/QVpljjPiKDsSn+gFhwuI=")
+ki.login(token="EmiogXguyGv03chUFqFe.Vz4+DI5v8TEUGtMphKulhG.j2aMaGOTGQUS8Fx0dz1ny8ebdpvXlDtAEQagsmivPQg=")
 ki.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="Em2HmZvkE4cyoLFijUL2.95DDfpXOzsm0FioN2vCdmG.n1GSAR13TkVFjvmrTZnh/Itk/Gz7RbgmChc8sGXdklM=")
+kc.login(token="EmzqcRBq7IcOUrzyLCPf.khw5oKeXkGNprT+dPTIyhW.RYojfWiLfx6InOw27rvsI71NY//HhLRMX0RjYqKZRZM=")
 kc.loginResult()
 
 kd = LINETCR.LINE()
-kd.login(token="EmMNxkESqtLLGdYimFx2.lCQlKffPrDvJ4C9I01fB4G.Mi9qkLaNGflBN5yHA7bBxM+zeW4zDyttagUtbJq73lQ=")
+kd.login(token="Emr2Vurv5MbVJBCstgO9.NLEdVUFE9zK89Wsdc4+xQq.7J5xt1VOfegPn01qfCODHgH5tRu672IZM/mecO3BL6c=")
 kd.loginResult()
 
 ke = LINETCR.LINE()
-ke.login(token="Emp1ze1uZVSmIb6R1JD4.nVVrGx/cv6f5b03ArGFU5a.FVXgKB5umtIsSaLX3wEd//9PQvSLfJ0hFQD5DSlUkzw=")
+ke.login(token="EmxBEWwTLeAFzWy4YIx8.8dn1/XO+lm5j1UydamMhsa.Vy3Yg/C5iHr08ocQtjgfWvvZ2VovcPWDw0e8ClvDZfw=")
 ke.loginResult()
 
 kf = LINETCR.LINE()
@@ -153,12 +153,12 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
-Rx10 = ["u33fab009d719040149bce490cfe33929"]
-Rx9 = ["u33fab009d719040149bce490cfe33929"]
-Rx8 = ["u33fab009d719040149bce490cfe33929"]
-Rx7 = ["u33fab009d719040149bce490cfe33929"]
-Rx6 = ["u33fab009d719040149bce490cfe33929"]
+admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx10 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx9 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx8 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx7 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx6 = ["u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
 Rx5 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
 Rx4 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
 Rx3 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
@@ -2136,7 +2136,7 @@ def bot(op):
                 msgs+="\n\nTotal %i Blocked User(s)" % len(kontak)
                 cl.sendText(msg.to, msgs)                                
                 
-            elif msg.text in ["Masuk"]:
+            elif msg.text in ["K."]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2293,7 +2293,7 @@ def bot(op):
 
 #-----------------------------------------------
 	
-            elif msg.text in ["Keluar"]:
+            elif msg.text in ["B."]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
