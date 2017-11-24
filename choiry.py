@@ -6,73 +6,79 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Em9VIkILW2CwGApb7j36.HkD38p8XHYNXC/RJ9Xo2HG.EfTYFgHm2IjYv6yqEElm0UFbXTkvk2avZqV8pCwYjEE=")
+ki.login(token="En8KKbW65Jh8VVeut7j3.WYwUmPddvCwHomBR1CqRKW.jZ80gU89Uvta0oMcpuu8ueHTW/aDxVBetUXMgJA7Rf8=")
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="Emp84Zeb9fl9CC9lBMu5.9t4wrnXPyY6m3qm/g3f4Pq.G6DIl7V1tDxhiNzV187nsLcdyXLxifgMgzdwY3aCG5I=")
+ki2.login(token="EnCCr6T5Lrhkyk6SdC11.g6FOp0t4PxDBHY58MdDjSq.ODq8JuTzElNj9mmV3PHV3pbXsKXArPt5Qx7b6YhFfIo=")
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EmWzkBPZWmVfiBQbNHw4.nhCM9bm527bW1pw6cY359a.vbuam3vaByorGM7axkyDrrFhmL2s8V/oOvrUOKAk0Rg=")
+ki3.login(token="End2Iy5XfSuogiqXKf7d.2LoE6VMBQSoJV0xj2s8CRq.so8fYjTxsuwnc+rbOmPIjExMFG8XNvs9pbBAHOK9wTY=")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="EmCc77A5ZHufod7zVN48.va1X7L9l5o27JChRLI54sa.2lGORWOJISLhjE51NBNgNMroJq0xVFJ7Ffm4GogVs4Y=")
+ki4.login(token="En1ce6Y7PKSehuVrU6o2.lCQlKffPrDvJ4C9I01fB4G.1rHN+BU6bIZ0fwRSK61BDF5vyNEB6mAliodPEKn7B4I=")
 ki4.loginResult()
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""=========[Command]=========
-•[Mybot]
-•[Me]
-•[Mid]
-•[Gid]
-•[All mid]
-•[TL:「Text]
-•[Mybio:「Text」]
-•[Cn:「Text」]
-•[Mid:「mid」]
-•[Contact 「On/Off」]
-•[Auto Join 「On/Off」]
-•[Add 「On/Off」]
-•[Share 「On/Off」]
-•[Jam 「On/Off」]
-•[Leave 「On/Off」]
-•[Group Cancel:]
-•[Jam Say:「Nama」]
-•[Update]
-•[Banlist]
-•[Pesan Cek]
-•[Blocklist]
-•[Pesan set:「Text」]
-•[Groups]
-•[Get contact:「mid」]
+helpMessage ="""=====[۞ น้องชิ ۞]=====
+۞ [Mybot]
+۞ [Me]
+۞ [Mid]
+۞ [Gid]
+۞ [All mid]
+۞ [TL:「Text]
+۞ [Mybio:「Text」]
+۞ [Cn:「Text」]
+۞ [Mid:「mid」]
+۞ [Contact 「On/Off」]
+۞ [Auto Join 「On/Off」]
+۞ [Add 「On/Off」]
+۞ [Share 「On/Off」]
+۞ [Jam 「On/Off」]
+۞ [Leave 「On/Off」]
+۞ [Group Cancel:]
+۞ [Jam Say:「Nama」]
+۞ [Update]
+۞ [Banlist]
+۞ [Pesan Cek]
+۞ [Blocklist]
+۞ [Pesan set:「Text」]
+۞ [Groups]
+۞ [Get contact:「mid」]
 
 ====[Command In Groups]====
-●[Kick:「mid」]
-●[Invite:「mid」]
-●[Cancel]
-●[Ourl]
-●[Mbl]
-●[Curl]
-●[Protect 「On/Off」]
-●[Qr 「On/Off」]
-●[Cancel 「On/Off」]
-●[Invite 「On/Off」]
-●[Ginfo]
-●[Gn 「Nama Grup」]
-●[Album:「ID」]
-●[Gurl 「ID」]
-●[Nk「nama」]
-●[Ban]
-●[Unban]
+۞ [Kick:「mid」]
+۞ [Invite:「mid」]
+۞ [Cancel]
+۞ [Ourl]
+۞ [Mbl]
+۞ [Curl]
+۞ [Protect 「On/Off」]
+۞ [Qr 「On/Off」]
+۞ [Cancel 「On/Off」]
+۞ [Invite 「On/Off」]
+۞ [Ginfo]
+۞ [Gn 「Nama Grup」]
+۞ [Album:「ID」]
+۞ [Gurl 「ID」]
+۞ [Nk「nama」]
+۞ [Ban]
+۞[Unban]
+   
+          🐧 By.Susu 🐧
+    http://line.me/ti/p/j2nADgDkJf
+    
+    🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭
+    
 """
 KAC=[cl,ki,ki2,ki3,ki4]
 KXX=[ki,ki2,ki3,ki4]
@@ -82,7 +88,7 @@ ki2mid = ki2.getProfile().mid
 ki3mid = ki3.getProfile().mid
 ki4mid = ki4.getProfile().mid
 Bots=[mid,kimid,ki2mid,ki3mid]
-admsa = "u28a1c7da6625d87f61c5f15b09b4167a"
+admsa = "u186cf7940c7de8f76a3cbc76405f5f5c"
 
 wait = {
     'contact':False,
@@ -103,7 +109,7 @@ Thanks For Add Me
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"􀰂􀰂🚬􀂳􀰂Choiry􏿿",
+    "cName":"🐧By.Susu🐧 ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -173,7 +179,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u28a1c7da6625d87f61c5f15b09b4167a":
+                if msg.from_ == "u186cf7940c7de8f76a3cbc76405f5f5c":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -1055,12 +1061,20 @@ def bot(op):
                         else:
                             mg += str(y["title"]) + ":0 Pieces\n"
                     cl.sendText(msg.to,mg)
-
+                     
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
-                cl.sendText(msg.to, "Progress...")
+                cl.sendText(msg.to, "กรุณรอ...")
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+                elapsed_time = time.time() - start
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))
+                elapsed_time = time.time() - start
+                ki2.sendText(msg.to, "%sseconds" % (elapsed_time))
+                elapsed_time = time.time() - start
+                ki3.sendText(msg.to, "%sseconds" % (elapsed_time))
+                elapsed_time = time.time() - start
+                ki4.sendText(msg.to, "%sseconds" % (elapsed_time))          
             elif msg.text.lower() == 'groups id':
                 gid = cl.getGroupIdsJoined()
                 h = ""
@@ -1074,7 +1088,7 @@ def bot(op):
                  for i in gid:
                   h += "▶。 %s  \n" % (cl.getGroup(i).name + " | : " + str(len (cl.getGroup(i).members)))
                  cl.sendText(msg.to, "◀My Groups▶\n"+ h +"▶Jumlah : " +str(len(gid)))
-            elif msg.text.lower() == '@bye':
+            elif msg.text.lower() == 'Bye':
                 gid = cl.getGroupIdsJoined()
                 gid = ki.getGroupIdsJoined()
                 gid = ki2.getGroupIdsJoined()
@@ -1289,9 +1303,9 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Silahkan Aktifkan Jam")
 
-            elif "Nk " in msg.text:
+            elif "Nk @" in msg.text:
                   if msg.from_ in admsa:
-                       nk0 = msg.text.replace("Nk ","")
+                       nk0 = msg.text.replace("Nk @","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
@@ -2118,7 +2132,7 @@ def nameUpdate():
             #pass
             if wait["clock"] == True:
                 now2 = datetime.now()
-                nowT = datetime.strftime(now2,"(%H:%M)")
+                nowT = datetime.strftime(now2,"〖%H:%M〗")
                 profile = cl.getProfile()
                 profile.displayName = wait["cName"] + nowT
                 cl.updateProfile(profile)
