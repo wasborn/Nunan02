@@ -2580,17 +2580,7 @@ def nameUpdate():
         except:
             pass
 #----------------------------------------
-          #VPS STUFF - VPS NEEDED TO RUN THIS COMMAND :)
-            elif msg.text in ["vps","kernel"]:
-                 if msg.from_ in admin:
-                     botKernel = subprocess.Popen(["uname","-svmo"], stdout=subprocess.PIPE).communicate()[0]
-                     cl.sendText(msg.to, botKernel)
-                     print "[Command]Kernel executed"
-                 else:
-                     cl.sendText(msg.to,"Command denied.")
-                     cl.sendText(msg.to,"Admin permission required.")
-                     print "[Error]Command denied - Admin permission required"
-
+                
 #-------------------------------
 thread2 = threading.Thread(target=nameUpdate)
 thread2.daemon = True
