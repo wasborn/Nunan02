@@ -10,19 +10,19 @@ cl.login(token="EmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="En8KKbW65Jh8VVeut7j3.WYwUmPddvCwHomBR1CqRKW.jZ80gU89Uvta0oMcpuu8ueHTW/aDxVBetUXMgJA7Rf8=")
+ki.login(qr=True)
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="EnCCr6T5Lrhkyk6SdC11.g6FOp0t4PxDBHY58MdDjSq.ODq8JuTzElNj9mmV3PHV3pbXsKXArPt5Qx7b6YhFfIo=")
+ki2.login(qr=True)
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="End2Iy5XfSuogiqXKf7d.2LoE6VMBQSoJV0xj2s8CRq.so8fYjTxsuwnc+rbOmPIjExMFG8XNvs9pbBAHOK9wTY=")
+ki3.login(qr=True)
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="En1ce6Y7PKSehuVrU6o2.lCQlKffPrDvJ4C9I01fB4G.1rHN+BU6bIZ0fwRSK61BDF5vyNEB6mAliodPEKn7B4I=")
+ki4.login(qr=True)
 ki4.loginResult()
 
 print "login success"
