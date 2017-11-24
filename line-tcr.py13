@@ -13,7 +13,7 @@ cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="En4Tir2nZJ92LsDKi579.o7jxT4kCJ57GeBR0JcDmAq.o+1vOHTTQqor0hVZq0o73ib60gbEGepSAyeVvX82NPg=")
 ki.loginResult()
 
 kk = ks = ki
