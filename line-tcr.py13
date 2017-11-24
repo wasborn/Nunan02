@@ -9,11 +9,11 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EmucvXWl2HMoXE7Rd7E8.DVr+0DP7SFV9A+ZUW+80ca.mmHP9FLWj1CbGTr/kl/56VnqbiBSzJj7h9DabSmDkMs=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmHgBYVfnHEIpMcUEuZd.b9HIzg4vwiAXlJusSrmh3q.FLbrZX8/UXwzgAG0aI560+dJG6SChoBcVaAfLBHPjKw=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = ks = ki
@@ -346,7 +346,7 @@ def bot(op):
 					pass                
         if op.type == 26:
             msg = op.message
-            if msg.toType == 0:
+            if msg.toType == 13:
                 msg.to = msg.from_
                 if msg.from_ == "u7c6053763344625bb1159355020c5c27":
                     if "join:" in msg.text:
@@ -858,7 +858,7 @@ def bot(op):
                         cl.sendText(msg.to,"done")
                     else:
                         cl.sendText(msg.to,"Already。")                        
-            elif "ตั้งค่า" == msg.text:
+            elif "Set" == msg.text:
                 md = ""
                 if wait["contact"] == True: md+="✔ Contact → on \n"       
                 else: md+="❌ Contact → off \n"      
@@ -1050,7 +1050,7 @@ def bot(op):
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg) 
-            elif "คิก" in msg.text:
+            elif "Kicker" in msg.text:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1101,7 +1101,7 @@ def bot(op):
                   ks.updateGroup(G)
                   Ticket = ks.reissueGroupTicket(msg.to)                           
 
-            elif msg.text in ["ออก"]:
+            elif msg.text in ["Bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -1524,11 +1524,13 @@ def bot(op):
             elif "#test" in msg.text:
                 ks.sendText(msg.to,"ok")
 #-----------------------------------------------
-            elif "สปีด" in msg.text:
+            elif "Sp" in msg.text:
                 start = time.time()
-                cl.sendText(msg.to, "ƛƇƇЄƧƧ ƧƤЄЄƊ ƜƛƖƬƖƝƓ")
+                cl.sendText(msg.to, "กรุณา รอ....")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+		elapsed_time = time.time() - start
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))
 #-----------------------------------------------             
         if op.type == 19:
             try:
