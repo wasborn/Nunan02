@@ -29,7 +29,7 @@ kc.login(token="EnWu94hqkpos228OfOoa.otjypLFkvzc+H16E2qyN/G.kgjC8YYWr9S0iK8i8sl2
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="Endc3mRumZVeSpnJelUf.2Ad+jSMK5L577woncnuh7W.A2a8Q176BBlcqx1B8CsNW9+5IGsDvR4S1ki7LdQ86ZA=")
+ka.login(qr="True)
 ka.loginResult()
 
 print "login success"
