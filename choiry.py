@@ -29,7 +29,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""=====[۞ น้องชิ ۞]=====
+helpMessage ="""=====[꧁〖✟۞ ℓℓஆՁՃิ۞〗꧂]=====
 ۞ [Mybot]
 ۞ [Me]
 ۞ [Mid]
@@ -109,7 +109,7 @@ Thanks For Add Me
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"🐧By.Susu🐧 ",
+    "cName":"꧁〖✟۞ ℓℓஆՁՃิ۞〗꧂",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
