@@ -9,33 +9,33 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")
+cl.login(token="EmAQjwC3fXERHbmJRbp1.oBMnIIaYYBSON1G4eAk5qq.lLTcS3NinibFqFxMzLbAK0aVxCaKkReI0t0vSBJD7UM= ")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmaVvITzZCcQjo7W3PJb.SK7Te9gWYUQsywhOX1wfYW.quWHfPMQMRB0oZQ0uPxOCxzkWuEojOkAkiHRKhR6eZA=")
+ki.login(token="EmmB1hZVgq4K0gmWiI99.IvexMI98A5RtjcKGgjy4cq.bFp6cIxfBmb83M+9Txm7k+tcTFcagKyHRQZkXm2FXrA=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EmiogXguyGv03chUFqFe.Vz4+DI5v8TEUGtMphKulhG.j2aMaGOTGQUS8Fx0dz1ny8ebdpvXlDtAEQagsmivPQg=")
+kk.login(token="EmidolZEHbaTPgbPWmI4.1S4YWWSQ+Ako2o1RzSdrva.MQMJLr3PWRl0XlEYbrCVT0D74vwvyEyCLW5GsU9bxVg= ")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EmzqcRBq7IcOUrzyLCPf.khw5oKeXkGNprT+dPTIyhW.RYojfWiLfx6InOw27rvsI71NY//HhLRMX0RjYqKZRZM=")
+ks.login(token="Em78HWngdSvEcFJpqKEf.apgUtgIvTyotJsbBT+q3dW.8EuxMw6s/4Ed2ILRfWeSzgJ/LWiPKqB6zEQiDMYIK+U= ")
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="Emr2Vurv5MbVJBCstgO9.NLEdVUFE9zK89Wsdc4+xQq.7J5xt1VOfegPn01qfCODHgH5tRu672IZM/mecO3BL6c=")
+kc.login(token="EnC38ZGeAcP4PLCWWx52.rm2ylLXzJpoyheGEx9PgmG.iFhJ0UeAvr8gIAbFmVhoLn2OVs/WWOm21nEGeJ25s3w=")
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="EmxBEWwTLeAFzWy4YIx8.8dn1/XO+lm5j1UydamMhsa.Vy3Yg/C5iHr08ocQtjgfWvvZ2VovcPWDw0e8ClvDZfw=")
+ka.login(token="EnZDUg5DvvayMMi8gJv6.yBVBTPsh6djJxYEgfejy1G.Ud0hVhzXJ9cheAUzFEqF7NLfvfyAoDHgXmrCVXztxDo=")
 ka.loginResult()
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""🇹🇭 ─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ 🇹🇭
+helpMessage ="""🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭
   
 🌥️[Id]: ~÷~
 🌧️[Mid]: ~÷~
@@ -84,9 +84,9 @@ helpMessage ="""🇹🇭 ─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ �
 ❄️[NK: "Name"]: ~÷~
 ❄️[Dead]: "Kick Blacklist"
           
-	  ─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ 
+	 🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭
 	  🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭
-	http://line.me/ti/p/j2nADgDkJf
+	
 """
 helpMessage2 ="""-💕™ -
 
@@ -146,9 +146,9 @@ wait = {
     'leaveRoom':False,
     'timeline':False,
     'autoAdd':False,
-    'message':"Thanks add me 💓Love💓─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─     🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭     http://line.me/ti/p/j2nADgDkJf ",
+    'message':"Thanks add me 💓Love💓─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ 🇹🇭  รับทำ Self ℬ❍Ŧ🇹🇭   🇹🇭🏁  Self  Server premium👉 ฝีมือคนไทย ↜«↜«↜✾↝»↝»↝ 🇹🇭 ■1self  1 kicker =  450  ฿ 🇹🇭 ■1self  2 kicker =  650  ฿ 🇹🇭 ■1self  3 kicker =  850  ฿ ◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄ 🇹🇭 ■เพิ่ม kicker ตัวล่ะ 200 ฿ 🖒 🇹🇭 ■self กันรันอย่างเดียว 300 $ สามารถลบรันได้  🇹🇭 ■กันการเชิญเข้ากลุ่มได้ 100%✔🇹🇭 ■ราคาเป็นกันเอง คุยง่าย ••••••••••••••••••••••••••••• http://line.me/ti/p/j2nADgDkJf  ",  
     "lang":"JP",
-    "comment":"Auto like  💓Love💓─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─    🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭🇹🇭         http://line.me/ti/p/j2nADgDkJf ",
+    "comment":"Auto like  💓Love💓─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─  🇹🇭  รับทำ Self ℬ❍Ŧ🇹🇭   🇹🇭🏁  Self  Server premium👉 ฝีมือคนไทย ↜«↜«↜✾↝»↝»↝ 🇹🇭 ■1self  1 kicker =  450  ฿ 🇹🇭 ■1self  2 kicker =  650  ฿ 🇹🇭 ■1self  3 kicker =  850  ฿ ◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄ 🇹🇭 ■เพิ่ม kicker ตัวล่ะ 200 ฿ 🖒 🇹🇭 ■self กันรันอย่างเดียว 300 $ สามารถลบรันได้  🇹🇭 ■กันการเชิญเข้ากลุ่มได้ 100%✔🇹🇭 ■ราคาเป็นกันเอง คุยง่าย ••••••••••••••••••••••••••••• http://line.me/ti/p/j2nADgDkJf  ",
     "likeOn":False,
     "commentOn":False,
     "commentBlack":{},
