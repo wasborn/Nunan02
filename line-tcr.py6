@@ -1811,24 +1811,27 @@ def bot(op):
                     ks.sendText(msg.to," " + string + " ")
                     kc.sendText(msg.to," " + string + " ")
                     ka.sendText(msg.to," " + string + " ")    
-
-#-----------------------------------------------
-            elif "Speed" in msg.text:
+ #===============================================
+            elif msg.text in ["Sp","sp"]:
+                cl.sendText(msg.to, "Progress.......")
                 start = time.time()
-                cl.sendText(msg.to, "กรุณารอ...")
+                time.sleep(0.001)
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sseconds" % (elapsed_time))  
-		elapsed_time = time.time() - start
-                ki.sendText(msg.to, "%sseconds" % (elapsed_time))  
-		elapsed_time = time.time() - start
-                kk.sendText(msg.to, "%sseconds" % (elapsed_time))  
-		elapsed_time = time.time() - start
-                ks.sendText(msg.to, "%sseconds" % (elapsed_time))  
-		elapsed_time = time.time() - start
-                kc.sendText(msg.to, "%sseconds" % (elapsed_time))  
-		elapsed_time = time.time() - start
-                ka.sendText(msg.to, "%sseconds" % (elapsed_time))  
-#-----------------------------------------------             
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                print "[Command]Speed palsu executed"
+            elif msg.text in ["Speed"]:
+                cl.sendText(msg.to, "Progress.......")
+                start = time.time()
+                time.sleep(0.001)
+                elapsed_time = time.time() - start
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kk.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ks.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                kc.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                ka.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                print "[Command]Speed palsu executed"
+                		             
+#======================================== 
         if op.type == 19:
             try:
                 if op.param3 in mid:
