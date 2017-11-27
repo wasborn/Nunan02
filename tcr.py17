@@ -2205,9 +2205,8 @@ def bot(op):
                 kj.sendText(msg.to, "%sseconds" % (elapsed_time))
                 print "[Command]Speed palsu executed"
 #=============================================
-            elif "#v10" in msg.text:
-                cl.sendText(msg.to,"""[SELFBOT PHET HACK BOT]\n\n
-		ki.sendText(msg.to,"""[SELFBOT PHET HACK BOT]\n\n
+            elif "#ขาย" in msg.text:
+                cl.sendText(msg.to,"""[SELFBOT PHET HACK BOT]\n\n		
 Phet Tema Hack Bot
 🇹🇭  รับทำ Self ℬ❍Ŧ🇹🇭 
 
