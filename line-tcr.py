@@ -9,85 +9,81 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token=" EmAQjwC3fXERHbmJRbp1.oBMnIIaYYBSON1G4eAk5qq.lLTcS3NinibFqFxMzLbAK0aVxCaKkReI0t0vSBJD7UM= ")
+cl.login(token="EnOFIwSYwgELXKRtEpm6.Y8SI/K0ODWXf8uVlQ6jHvG./Oyk3qkC02wzpX08ia++dejNrc5nNT6/CdQwFIOGXpQ=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EmmB1hZVgq4K0gmWiI99.IvexMI98A5RtjcKGgjy4cq.bFp6cIxfBmb83M+9Txm7k+tcTFcagKyHRQZkXm2FXrA=")
+ki.login(token="EnJYIHId7U4fIBleMEe9.o7jxT4kCJ57GeBR0JcDmAq.MvB7h8kFhT7txENWIV1A/nAPTZgsUuq7QuoEUAlpELg=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token=" EmidolZEHbaTPgbPWmI4.1S4YWWSQ+Ako2o1RzSdrva.MQMJLr3PWRl0XlEYbrCVT0D74vwvyEyCLW5GsU9bxVg= ")
+kk.login(qr=True)
 kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token=" Em78HWngdSvEcFJpqKEf.apgUtgIvTyotJsbBT+q3dW.8EuxMw6s/4Ed2ILRfWeSzgJ/LWiPKqB6zEQiDMYIK+U= ")
-ks.loginResult()
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""By.Nunu.Selfbot
   
-👻[Id]: ~÷~
-👻[Mid]: ~÷~
-👻[All mid]:
-👻[Me]: ~÷~
-👻[K1/K2/K3/]: "Contact"
-👻[K1/K2/K3 fuck:]: "Kick kicker"
-👻[Group Id]: "Id Me Group"
-👻[TL : "Text"]: "Auto status TL"
-👻[Clock :]: "Name Clock"
-👻[Up clock]: "Up date Clock"
-👻[Name : 'text']: "Name me"
-👻[MIC]: "mid"]: "Contact share"
-👻[Reject]: " invite"]: "Reject invite"
-👻[Massage add: "text"]: ~÷~
-👻[Add confirmasi]: ~÷~
-👻[Comment set : "Text"]: ~÷~
-👻[Comment check]: ~÷~
-👻[Clock: on]: "Clock name on"
-👻[Clock: off]: "Clock name off"
-👻[Ban]: "Add blacklist"
-👻[Unban]: "Dalate blacklist"
-👻[Banlist]: "Check blacklist"
-👻[Proteck: on/off]:"ป้องกัน"
-👻[Block url: on/off]:"ป้องกันลิ้ง"
-👻[Namelock: on/off]:"ป้องกันห้อง"
-👻[Blockinvite:on/off]:"ป้องกันการเชิญ"
+🍎[Id]: ~÷~
+🍎[Mid]: ~÷~
+🍎[All mid]:
+🍎[Me]: ~÷~
+🍎[K1/K2/K3/]: "Contact"
+🍎[K1/K2/K3 fuck:]: "Kick kicker"
+🍎[Group Id]: "Id Me Group"
+🍎[TL : "Text"]: "Auto status TL"
+🍎[Clock :]: "Name Clock"
+🍎[Up clock]: "Up date Clock"
+🍎[Name : 'text']: "Name me"
+🍎[MIC]: "mid"]: "Contact share"
+🍎[Reject]: " invite"]: "Reject invite"
+🍎[Massage add: "text"]: ~÷~
+🍎[Add confirmasi]: ~÷~
+🍎[Comment set : "Text"]: ~÷~
+🍎[Comment check]: ~÷~
+🍎[Clock: on]: "Clock name on"
+🍎[Clock: off]: "Clock name off"
+🍎[Ban]: "Add blacklist"
+🍎[Unban]: "Dalate blacklist"
+🍎[Banlist]: "Check blacklist"
+🍎[Proteck: on/off]:"ป้องกัน"
+🍎[Block url: on/off]:"ป้องกันลิ้ง"
+🍎[Namelock: on/off]:"ป้องกันห้อง"
+🍎[Blockinvite:on/off]:"ป้องกันการเชิญ"
 
--☣[Set]:Commands Set. -
-👽[Contact: on/off]: 
-👽[Auto join: on/off]: 
-👽[Cancel Invite: 1 on/off]:
-👽[Auto share: on/off]:
-👽[Auto leave: on/off]: 
-👽[Comment: on/off]: 
-👽[Auto add: on/off]: 
-👽[Auto like: on/off]: 
+-⚡[Set]:Commands Set. -
+🍎[Contact: on/off]: 
+🍎[Auto join: on/off]: 
+🍎[Cancel Invite: 1 on/off]:
+🍎[Auto share: on/off]:
+🍎[Auto leave: on/off]: 
+🍎[Comment: on/off]: 
+🍎[Auto add: on/off]: 
+🍎[Auto like: on/off]: 
 	
--☢ Commands in the groups. ~~~~
-☠[Ban " @Tag]: 
-☠[Unban " @Tag]: 
-☠[Urlon]: "Open urL"
-☠[Urloff]: "Closed urL"
-☠[Url]: " Check urL room"
-☠[Ginfo]: "~÷~ data room"
-☠[Invite: "mid"]: 
-☠[Say: "Text"]: "Kicker talk"
-☠[Cancel]: "Cancel invite"
-☠[Gn: "name"]: "Change name Group"
-☠[NK: "Name"]: ~÷~
-☠[Dead]: "Kick Blacklist"
+-🐧Commands in the groups. ~~~~
+🍎[Ban " @Tag]: 
+🍎[Unban " @Tag]: 
+🍎[Urlon]: "Open urL"
+🍎[Urloff]: "Closed urL"
+🍎[Url]: " Check urL room"
+🍎[Ginfo]: "~÷~ data room"
+🍎[Invite: "mid"]: 
+🍎[Say: "Text"]: "Kicker talk"
+🍎[Cancel]: "Cancel invite"
+🍎[Gn: "name"]: "Change name Group"
+🍎[NK: "Name"]: ~÷~
+🍎[Dead]: "Kick Blacklist"
    ŋีಖଏדЮ✫নმ௮₷ণજัゆ 
    By.Nunu :  http://line.me/ti/p/ShgslAPyYS 
 """
 helpMessage2 ="""-⚠™ -
 
-💀[Protect: on/off]: 
-💀[Block url: on/off]: 
-💀[Namelock: on/off]: 
-💀[Blockinvite: on/off]:  
+🍎[Protect: on/off]: 
+🍎[Block url: on/off]: 
+🍎[Namelock: on/off]: 
+🍎[Blockinvite: on/off]:  
 	
 """
 KAC = [cl,ki,kk,ks]
