@@ -290,14 +290,21 @@ def bot(op):
                     pass
                 else:
                     cl.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
                     kk.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
                     ks.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
                     ki.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
                     kc.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
                     ka.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
 		    ko.cancelGroupInvitation(op.param1, matched_list)
+		    time.sleep(0.01)
 		    kj.cancelGroupInvitation(op.param1, matched_list)
-                    
+                    time.sleep(0.01)
         if op.type == 17:
             if mid in op.param3:
                     group = cl.getGroup(msg.to)
@@ -2190,6 +2197,50 @@ def bot(op):
                 kj.sendText(msg.to, "%sseconds" % (elapsed_time))
                 print "[Command]Speed palsu executed"
 #=============================================
+elif "#ขายบอท" in msg.text:
+                ki.sendText(msg.to,"""[SELFBOT PHET HACK BOT]\n\n
+Phet Tema Hack Bot
+🇹🇭  รับทำ Self ℬ❍Ŧ🇹🇭 
+
+🇹🇭🏁  Self  Server premium👉 ฝีมือคนไทย
+↜«↜«↜✾↝»↝»↝
+🇹🇭 ■1self  1 kicker =  450  ฿
+🇹🇭 ■1self  2 kicker =  650  ฿
+🇹🇭 ■1self  3 kicker =  850  ฿
+◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄
+🇹🇭 ■เพิ่ม kicker ตัวล่ะ 200 ฿ 🖒
+🇹🇭 ■self กันรันอย่างเดียว 300 $ สามารถลบรันได้
+🇹🇭 ■กันการเชิญเข้ากลุ่มได้ 100%✔
+🇹🇭 ■ราคาเป็นกันเอง คุยง่าย
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+⛥▩เซลบอททีม1 self 18 kicker = 2000 
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+•••••••••••••••••••••••••••••
+📣  รับลงบอทSiri:v10 📣
+⛥  ลงสดที่ห้อง ⛥
+⛥  แบบห้องเปล่าพร้อมบอท  ⛥
+รับลงบอทเสริมSiri:v10 เพิ่ม ราคาชุดละ80บาท
+•••••••••••••••••••••••••••••
+⚠พิเศษ ขายตั๋วเชิญSiri:v10⚠
+☛1-5  = ใบล่ะ100
+☛6-10 =ใบล่ะ 90
+☛11-20=ใบละ 80
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+เรารับทำบอททุกประเภท มีครบทุกฟังชั่น
+ (บอทบินก็มีนะคะ)  👈👈👈 
+👨 ทักมาสอบถามได้เลยคะ 👩
+สนใจทักแชทเลยค่ะ ☎ 062-5315038
+  ⬇    ⬇    ⬇    ⬇    ⬇    ⬇     ⬇
+http://line.me/ti/p/j2nADgDkJf ► แมวชิ 
+http://line.me/ti/p/_SnII2cQTs   ► พี่โจ้
+http://line.me/ti/p/ShgslAPyYS  ► ป๋านุ
+
+ไม่ซื้อ อย่า แอดมา เข้าใจนะ
+
+🇹🇭〖✟ŋีಖଏדЮ۞নმ௮✫₷ণજัゆ۩〗🇹🇭
+""")
+
+#==================================================
 #=============================================
             elif "Hack4" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
@@ -2201,6 +2252,103 @@ def bot(op):
                 except:
                     cl.sendText(msg.to,"[name]\n" + contact.displayName + "\n[mid]\n" + contact.mid + "\n[statusmessage]\n" + contact.statusMessage + "\n[homePicture]\n" + str(cu))
 #=============================================
+#========================================
+            elif "Hack3 @" in msg.text:            
+                print "[Command]dp executing"
+                _name = msg.text.replace("Hack3 @","")
+                _nametarget = _name.rstrip('  ')
+                gs = cl.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                    cl.sendText(msg.to,"Contact not found")
+                else:
+                    for target in targets:
+                        try:
+                            contact = cl.getContact(target)
+                            cu = cl.channel.getCover(target)
+                            path = str(cu)
+                            cl.sendImageWithURL(msg.to, path)
+                        except:
+                            pass
+                print "[Command]dp executed"
+            elif "Hack2mid:" in msg.text:
+                umid = msg.text.replace("Hack2mid:","")
+                contact = cl.getContact(umid)
+                try:
+                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                except:
+                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                try:
+                    cl.sendImageWithURL(msg.to,image)
+                except Exception as error:
+                    cl.sendText(msg.to,(error))
+                    pass
+            elif "Hack2 " in msg.text:
+                if msg.toType == 2:
+                    msg.contentType = 0
+                    steal0 = msg.text.replace("Hack2 ","")
+                    steal1 = steal0.lstrip()
+                    steal2 = steal1.replace("@","")
+                    steal3 = steal2.rstrip()
+                    _name = steal3
+                    group = cl.getGroup(msg.to)
+                    targets = []
+                    for g in group.members:
+                        if _name == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Gak da orange")
+                    else:
+                        for target in targets:
+                            try:
+                                contact = cl.getContact(target)
+                                try:
+                                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                except:
+                                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                                try:
+                                    cl.sendImageWithURL(msg.to,image)
+                                except Exception as error:
+                                    cl.sendText(msg.to,(error))
+                                    pass
+                            except:
+                                cl.sendText(msg.to,"Error!")
+                                break
+                else:
+                    cl.sendText(msg.to,"Tidak bisa dilakukan di luar grup")
+
+#===============================================
+#=================================================
+            elif msg.text == "นับ":
+                    cl.sendText(msg.to, "!โปรดรอ..กรุณาพิมพ์ อ่าน")
+                    try:
+                        del wait2['readPoint'][msg.to]
+                        del wait2['readMember'][msg.to]
+                    except:
+                           pass
+                    now2 = datetime.now()
+                    wait2['readPoint'][msg.to] = msg.id
+                    wait2['readMember'][msg.to] = ""
+                    wait2['setTime'][msg.to] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    wait2['ROM'][msg.to] = {}
+                    print wait2
+            elif msg.text == "อ่าน":
+                    if msg.to in wait2['readPoint']:
+                        if wait2["ROM"][msg.to].items() == []:
+                            chiya = ""
+                        else:
+                            chiya = ""
+                            for rom in wait2["ROM"][msg.to].items():
+                                print rom
+                                chiya += rom[1] + "\n"
+                        cl.sendText(msg.to, "╔═══════════════%s\n╠════════════════\n%s╠═══════════════\n║Readig point creation:\n║ [%s]\n╚════════════════"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                    else:
+                        cl.sendText(msg.to, "Ketik Lurking dulu dudul Baru bilang result Point.")
+						
+#========================================
                 		             
 #========================================        
         if op.type == 19:
