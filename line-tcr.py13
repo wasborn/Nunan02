@@ -16,6 +16,10 @@ ki = LINETCR.LINE()
 ki.login(token="EnJYIHId7U4fIBleMEe9.o7jxT4kCJ57GeBR0JcDmAq.MvB7h8kFhT7txENWIV1A/nAPTZgsUuq7QuoEUAlpELg=")
 ki.loginResult()
 
+kk = LINETCR.LINE
+kk.login(qr=True)
+kk.loginResult()
+
 kk = ks = ki
 kc = ka = ki
 cl
