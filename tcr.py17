@@ -1468,6 +1468,7 @@ def bot(op):
                     for target in targets:
                         try:
                             cl.kickoutFromGroup(msg.to,[target])
+			    time.sleep(0.01)
                         except:
                             cl.kickoutFromGroup(msg.to,[target])
 			    time.sleep(0.01)
@@ -1503,7 +1504,8 @@ def bot(op):
 									ki.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									ki.kickoutFromGroup(msg.to, [target])							   
+									ki.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass
             elif "K2 kick" in msg.text:
 				OWN = "u33fab009d719040149bce490cfe33929","u2c7f708769a2eb35d9ae9f73cd366e0b"
@@ -1530,7 +1532,8 @@ def bot(op):
 									kk.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									kk.kickoutFromGroup(msg.to, [target])							   
+									kk.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass
 
             elif "K3 kick" in msg.text:
@@ -1558,7 +1561,8 @@ def bot(op):
 									ks.kickoutFromGroup(msg.to, [target])		
 									time.sleep(0.01)
 							except:
-									ks.kickoutFromGroup(msg.to, [target])							   
+									ks.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass									
 
             elif "K4 kick" in msg.text:
@@ -1586,7 +1590,8 @@ def bot(op):
 									kc.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									kc.kickoutFromGroup(msg.to, [target])							   
+									kc.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass	
 	 
 	    elif "K5 kick" in msg.text:
@@ -1614,7 +1619,8 @@ def bot(op):
 									ka.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									ka.kickoutFromGroup(msg.to, [target])							   
+									ka.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass			
 					
 	    elif "K6 kick" in msg.text:
@@ -1642,7 +1648,8 @@ def bot(op):
 									ko.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									ko.kickoutFromGroup(msg.to, [target])							   
+									ko.kickoutFromGroup(msg.to, [target])		
+									time.sleep(0.01)
 									pass			
 					
 	    elif "K7 kick" in msg.text:
@@ -1670,7 +1677,8 @@ def bot(op):
 									kj.kickoutFromGroup(msg.to, [target])	
 									time.sleep(0.01)
 							except:
-									kj.kickoutFromGroup(msg.to, [target])							   
+									kj.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass			
 									
             elif "Ban " in msg.text:
