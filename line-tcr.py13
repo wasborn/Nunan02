@@ -9,11 +9,11 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EnOFIwSYwgELXKRtEpm6.Y8SI/K0ODWXf8uVlQ6jHvG./Oyk3qkC02wzpX08ia++dejNrc5nNT6/CdQwFIOGXpQ=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EnJYIHId7U4fIBleMEe9.o7jxT4kCJ57GeBR0JcDmAq.MvB7h8kFhT7txENWIV1A/nAPTZgsUuq7QuoEUAlpELg=")
+ki.login(qr=True)
 ki.loginResult()
 
 kk = LINETCR.LINE
