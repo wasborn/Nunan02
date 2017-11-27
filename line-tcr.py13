@@ -20,10 +20,6 @@ kk = LINETCR.LINE
 kk.login(qr=True)
 kk.loginResult()
 
-kk = ks = ki
-kc = ka = ki
-cl
-
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
