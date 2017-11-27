@@ -25,52 +25,56 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""🇹🇭Selfbot By.Susu 🇹🇭
   
-🌟[Id]: ~÷~
-🌟[Mid]: ~÷~
-🌟[All mid]:
-🌟[Me]: ~÷~
-🌟[K1/K2/K3/]: "Contact"
-🌟[K1/K2/K3 fuck:]: "Kick kicker"
-🌟[Group Id]: "Id Me Group"
-🌟[TL : "Text"]: "Auto status TL"
-🌟[Clock :]: "Name Clock"
-🌟[Up clock]: "Up date Clock"
-🌟[Name : 'text']: "Name me"
-🌟[MIC]: "mid"]: "Contact share"
-🌟[Reject]: " invite"]: "Reject invite"
-🌟[Massage add: "text"]: ~÷~
-🌟[Add confirmasi]: ~÷~
-🌟[Comment set : "Text"]: ~÷~
-🌟[Comment check]: ~÷~
-🌟[Clock: on]: "Clock name on"
-🌟[Clock: off]: "Clock name off"
-🌟[Ban]: "Add blacklist"
-🌟[Unban]: "Dalate blacklist"
-🌟[Banlist]: "Check blacklist"
+🍎[Id]: ~÷~
+🍎[Mid]: ~÷~
+🍎[All mid]:
+🍎[Me]: ~÷~
+🍎[K1/K2/K3/]: "Contact"
+🍎[K1/K2/K3 fuck:]: "Kick kicker"
+🍎[Group Id]: "Idห้องทั้งหมดที่มีอยู่"
+🍎[TL : "Text"]: "Auto status TL"
+🍎[Clock :]: "Name Clock"
+🍎[Up clock]: "Up date Clock"
+🍎[Name : 'text']: "Name me"
+🍎[MIC]: "mid"]: "Contact share"
+🍎[Reject]: " invite"]: "คำสั่งลบรัน"
+🍎[Massage add: "text"]: ~÷~
+🍎[Add confirmasi]: ~÷~
+🍎[Comment set : "Text"]: ~÷~
+🍎[Comment check]: ~÷~
+🍎[Clock: on]: "นาฬิกาเปิด"
+🍎[Clock: off]: "นาฬิกาปิด"
+🍎[Ban]: "คำสั่งแบน"
+🍎[Unban]: "ล้างบันชีดำ"
+🍎[Banlist]: "เชคคนติดดำ"
 
--🌤️™[ƧЄƬ]:ƇƠMMƛƝƊƧ ƧЄƬ. -
-🌥️[Contact: on/off]: 
-🌥️[Auto join: on/off]: 
-🌥️[Cancel Invite: 1 on/off]:
-🌥️[Auto share: on/off]:
-⛅[Auto leave: on/off]: 
-🌨️[Comment: on/off]: 
-⛅[Auto add: on/off]: 
-⛅[Auto like: on/off]: 
+-🐧™[ƧЄƬ]:ƇƠMMƛƝƊƧ ƧЄƬ. -
+🍎[Contact: on/off]: 
+🍎[Auto join: on/off]: 
+🍎[Cancel Invite: 1 on/off]:
+🍎[Auto share: on/off]:
+🍎[Auto leave: on/off]: 
+🍎[Comment: on/off]: 
+🍎[Auto add: on/off]: 
+🍎[Auto like: on/off]: 
 	
 -💕™ƇƠMMƛƝƊƧ ƖƝ ƬHЄ ƓƦƠƲƤƧ. ~~~~
-☁️[Ban " @Tag]: 
-❄️[Unban " @Tag]: 
-❄️[Urlon]: "Open urL"
-❄️[ปิดลิ้งค์]: "Closed urL"
-❄️[ลิ้งค์]: " Check urL room"
-❄️[Ginfo]: "~÷~ data room"
-❄️[Invite: "mid"]: 
-❄️[Say: "Text"]: "Kicker talk"
-❄️[Cancel]: "Cancel invite"
-❄️[Gn: "name"]: "Change name Group"
-❄️[NK: "Name"]: ~÷~
-❄️[Dead]: "Kick Blacklist"
+🍎[Ban " @Tag]: 
+🍎[Unban " @Tag]: 
+🍎[Urlon]: "ลิ้งออน"
+🍎[ปิดลิ้งค์]:"ปิดลิ่ง"
+🍎[ลิ้งค์]: " ขอลิ้งกลุ่ม"
+🍎[Ginfo]: "~÷~ ข้อมูลกลุ่ม"
+🍎[Invite: "mid"]: 
+🍎[Say: "Text"]: "คำสั่งบอทพูดตาม"
+🍎[Cancel]: "คำสั่งยกเลิก ค้างเชิญกลุ่ม"
+🍎[Gn: "name"]: "คำสั่งเปลี่ยนชื่อห้อง"
+🍎[NK: "Name"]: "คำสั่งเตะ"
+🍎[Dead]: "คำสั่งบินแบบทีม"
+      ⚡ ชุดล๊อคห้อง ⚡
+🍎[Namelock:on]="ล๊อคชื่อห้อง"
+🍎[Blockinvite:on]="ล๊อคการเชิญสมาชิก"
+🍎[Block url:on]="ล๊อคลิ้งค์ห้อง"
 
               Selfbot.💕น้องชิ💕    
        
@@ -78,10 +82,10 @@ helpMessage ="""🇹🇭Selfbot By.Susu 🇹🇭
 """
 helpMessage2 ="""-⚠™ -
 
-🌠[ƤƦƠƬЄƇƬ: ƠƝ/ƠƑƑ]: 
-🌠[ƁԼƠƇƘ ƲƦԼ: ƠƝ/ƠƑƑ]: 
-🌠[ƝƛMЄԼƠƇƘ: ƠƝ/ƠƑƑ]: 
-👊🌠[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
+🍎[ƤƦƠƬЄƇƬ: ƠƝ/ƠƑƑ]: 
+🍎[ƁԼƠƇƘ ƲƦԼ: ƠƝ/ƠƑƑ]: 
+🍎[ƝƛMЄԼƠƇƘ: ƠƝ/ƠƑƑ]: 
+🍎[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
 	
 """
 KAC = [cl,ki,kk,ks,kc,ka]
