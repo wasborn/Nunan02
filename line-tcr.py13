@@ -17,7 +17,7 @@ ki.login(token="En3mLIyZaPb3LON9NSD5.etJBEwCSvh2QalFl1LivLq.dpNGdf5jF1HbeZz5pdlr
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(qr=True)
+kk.login(token="EnYMbBgFrW9GgKn24IT5.G3W1IE2kqsON5/XElN9ufq.jyIWZOgUdsKubEwc9b9d72DbgtYylE1MQckig0XmdyU=")
 kk.loginResult()
 
 kk = ks = ki
