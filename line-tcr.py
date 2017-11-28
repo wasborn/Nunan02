@@ -16,10 +16,6 @@ ki = LINETCR.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
-kk = LINETCR.LINE()
-kk.login(qr=True)
-kk.loginResult()
-
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -105,8 +101,6 @@ autoinvite = []
 autoleaveroom = []
 
 admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
-Rx3 = ["u3932583e57ca5590bf875e9ed90627fa"]
-Rx2 = ["ub4043866b3ce63c9808897c12f4f5f04"]
 Rx1 = ["uda539eeaf99baac3a3bf45c9d92f1cad"]
 Administrator = admins + Rx3 + Rx2 + Rx1
 AS = Rx2 + Rx1 + Rx3
