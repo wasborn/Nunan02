@@ -1978,9 +1978,9 @@ def bot(op):
                         cl.sendText(msg.to, "Ketik Lurking dulu dudul Baru bilang result Point.")
 						
 #========================================	
-           elif "#ขาย" in msg.text:
-                cl.sendText(msg.to,"""[SELF BOT SUSU]\n\n		
-Selfbot By.Susu
+           elif "#v10" in msg.text:
+                cl.sendText(msg.to,"""[SELF BOT SUSU]\n\n
+Susu selfbot
 🇹🇭  รับทำ Self ℬ❍Ŧ🇹🇭 
 
 🇹🇭🏁  Self  Server premium👉 ฝีมือคนไทย
