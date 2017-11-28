@@ -20,6 +20,10 @@ kk = LINETCR.LINE
 kk.login(qr=True)
 kk.loginResult()
 
+kk = ks = ki
+kc = ka = ki
+cl
+
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -88,7 +92,7 @@ helpMessage2 ="""-⚠™ -
 🍎[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
 	
 """
-KAC = [cl,ki,kk,ks,kc,ka]
+KAC = [cl,ki,kk]
 
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
