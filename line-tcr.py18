@@ -313,8 +313,11 @@ def bot(op):
                                         except:
                                             pass
                                         cl.sendText(op.param1,"Group name lock")
+					time.sleep(0.01)
                                         ki.sendText(op.param1,"Haddeuh dikunci Pe'a")
+					time.sleep(0.01)
                                         kk.sendText(op.param1,"Wekawekaweka 􀜁􀅔Har Har􏿿")
+					time.sleep(0.01)
                                         c = Message(to=op.param1, from_=None, text=None, contentType=13)
                                         c.contentMetadata={'mid':op.param2}
                                         cl.sendMessage(c)
@@ -325,11 +328,17 @@ def bot(op):
 			if mid in op.param3:
 				if wait["blacklist"] == True:
 					cl.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ki.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kk.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ks.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kc.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ka.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 		if op.type == 32:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
@@ -337,11 +346,17 @@ def bot(op):
 			if mid in op.param3:
 				if wait["blacklist"] == True:
 					cl.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ki.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kk.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ks.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kc.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ka.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 		if op.type == 25:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
@@ -349,11 +364,17 @@ def bot(op):
 			if mid in op.param3:
 				if wait["blacklist"] == True:
 					cl.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ki.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kk.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ks.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kc.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ka.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
         if op.type == 22:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
@@ -366,12 +387,19 @@ def bot(op):
 				if group.preventJoinByTicket == False:
 					group.preventJoinByTicket = True
 					cl.updateGroup(group)
+					time.sleep(0.01)
 					cl.sendText(op.param1,"URL can not be changed")
+					time.sleep(0.01)
 					ki.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kk.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ks.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					kc.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					ka.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.01)
 					wait["blacklist"][op.param2] = True
 					f=codecs.open('st2__b.json','w','utf-8')
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -386,22 +414,38 @@ def bot(op):
                         list_ = msg.text.split(":")
                         try:
                             cl.acceptGroupInvitationByTicket(list_[1],list_[2])
+			    time.sleep(0.01)
                             ki.acceptGroupInvitationByTicket(list_[1],list_[2])
+			    time.sleep(0.01)
                             kk.acceptGroupInvitationByTicket(list_[1],list_[2])
+			    time.sleep(0.01)
                             ks.acceptGroupInvitationByTicket(list_[1],list_[2])
+			    time.sleep(0.01)
                             kc.acceptGroupInvitationByTicket(list_[1],list_[2])
-                            ka.acceptGroupInvitationByTicket(list_[1],list_[2])														
+			    time.sleep(0.01)
+                            ka.acceptGroupInvitationByTicket(list_[1],list_[2])		
+			    time.sleep(0.01)
                             X = cl.getGroup(list_[1])
+			    time.sleep(0.01)
                             X = ki.getGroup(list_[1])
+			    time.sleep(0.01)
                             X = kk.getGroup(list_[1])
+			    time.sleep(0.01)
                             X = ks.getGroup(list_[1])
+			    time.sleep(0.01)
                             X = kc.getGroup(list_[1])
+			    time.sleep(0.01)
                             X = ka.getGroup(list_[1])
+			    time.sleep(0.01)
                             X.preventJoinByTicket = True
                             cl.updateGroup(X)
+			    time.sleep(0.01)
                             ki.updateGroup(X)
+			    time.sleep(0.01)
                             kk.updateGroup(X)
-                            ks.updateGroup(X)							
+			    time.sleep(0.01)
+                            ks.updateGroup(X)	
+			    time.sleep(0.01)
                         except:
                             cl.sendText(msg.to,"error")
             if msg.toType == 1:
@@ -1182,10 +1226,15 @@ def bot(op):
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
                   ki.acceptGroupInvitationByTicket(msg.to,Ti)
+		  time.sleep(0.01)
                   kk.acceptGroupInvitationByTicket(msg.to,Ti)
+		  time.sleep(0.01)
                   ks.acceptGroupInvitationByTicket(msg.to,Ti)
+		  time.sleep(0.01)
                   kc.acceptGroupInvitationByTicket(msg.to,Ti)
+		  time.sleep(0.01)
                   ka.acceptGroupInvitationByTicket(msg.to,Ti)
+		  time.sleep(0.01)
                   G = cl.getGroup(msg.to)
                   G.preventJoinByTicket = True
                   cl.updateGroup(G)
@@ -1255,10 +1304,15 @@ def bot(op):
                    X = cl.getGroup(msg.to)
                 try:			
 					ki.leaveGroup(msg.to)
+					time.sleep(0.01)
 					kk.leaveGroup(msg.to)
+					time.sleep(0.01)
 					ks.leaveGroup(msg.to)
+					time.sleep(0.01)
 					kc.leaveGroup(msg.to)
+					time.sleep(0.01)
 					ka.leaveGroup(msg.to)
+					time.sleep(0.01)
                 except:
                      pass            
             #---------------FUNGSI RATAIN GRUP TANPA KICK SESAMA BOT/Admin/Bots----------#
@@ -1288,8 +1342,11 @@ def bot(op):
                           if target not in Bots:
                             try:
                                 klist=[ki,kk,kc,ks,ka]
+				time.sleep(0.01)
                                 kicker=random.choice(klist)
+				time.sleep(0.01)
                                 kicker.kickoutFromGroup(msg.to,[target])
+				time.sleep(0.01)
                                 print (msg.to,[g.mid])
                             except:
                                 ki.sendText(msg.to,"H")
@@ -1309,8 +1366,10 @@ def bot(op):
                     for target in targets:
                         try:
                             cl.kickoutFromGroup(msg.to,[target])
+			    time.sleep(0.01)
                         except:
                            ki.kickoutFromGroup(msg.to,[target])
+			   time.sleep(0.01)
                     else:
                         pass
             elif "K1 kick" in msg.text:
@@ -1335,9 +1394,11 @@ def bot(op):
 						for target in targets:
 							try:
 								if msg.from_ not in target:
-									ki.kickoutFromGroup(msg.to, [target])							   
+									ki.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 							except:
-									ki.kickoutFromGroup(msg.to, [target])							   
+									ki.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass
             elif "K2 kick" in msg.text:
 				OWN = "u33fab009d719040149bce490cfe33929","u2c7f708769a2eb35d9ae9f73cd366e0b"
@@ -1361,9 +1422,11 @@ def bot(op):
 						for target in targets:
 							try:
 								if msg.from_ not in target:
-									kk.kickoutFromGroup(msg.to, [target])							   
+									kk.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 							except:
-									kk.kickoutFromGroup(msg.to, [target])							   
+									kk.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass
 
             elif "K3 kick" in msg.text:
@@ -1388,9 +1451,11 @@ def bot(op):
 						for target in targets:
 							try:
 								if msg.from_ not in target:
-									ks.kickoutFromGroup(msg.to, [target])							   
+									ks.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 							except:
-									ks.kickoutFromGroup(msg.to, [target])							   
+									ks.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass									
 
             elif "K4 kick" in msg.text:
@@ -1415,9 +1480,11 @@ def bot(op):
 						for target in targets:
 							try:
 								if msg.from_ not in target:
-									kc.kickoutFromGroup(msg.to, [target])							   
+									kc.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 							except:
-									kc.kickoutFromGroup(msg.to, [target])							   
+									kc.kickoutFromGroup(msg.to, [target])	
+									time.sleep(0.01)
 									pass	
             elif "Ban " in msg.text:
                 if msg.toType == 2:
