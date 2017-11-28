@@ -1225,6 +1225,7 @@ def bot(op):
                   cl.updateGroup(X)
                   invsend = 0 
                   Ti = cl.reissueGroupTicket(msg.to)
+		  time.sleep(0.01)
                   ki.acceptGroupInvitationByTicket(msg.to,Ti)
 		  time.sleep(0.01)
                   kk.acceptGroupInvitationByTicket(msg.to,Ti)
@@ -1855,16 +1856,22 @@ def bot(op):
             elif msg.text in ["Kill ban","เตะดำ"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
+		    time.sleep(0.01)
 		    group = kk.getGroup(msg.to)
+		    time.sleep(0.01)
 		    group = ks.getGroup(msg.to)
+		    time.sleep(0.01)
                     gMembMids = [contact.mid for contact in group.members]
                     matched_list = []
                     for tag in wait["blacklist"]:
                         matched_list+=filter(lambda str: str == tag, gMembMids)
                     if matched_list == []:
                         ki.sendText(msg.to,"There wasn't a blacklist user。")
+			time.sleep(0.01)
 			kk.sendText(msg.to,"There wasn't a blacklist user。")
+			time.sleep(0.01)
 			ks.sendText(msg.to,"There wasn't a blacklist user。")
+			time.sleep(0.01)
                         return
                     for jj in matched_list:
                         try:
@@ -2545,17 +2552,29 @@ def bot(op):
 				InviterX = Inviter.split(",")
 				contact = cl.getContact(op.param2)
 				cl.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				ki.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				kk.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				ks.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				kc.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				ka.cancelGroupInvitation(op.param1,InviterX)
+				time.sleep(0.01)
 				cl.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				ki.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				kk.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				ks.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				kc.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				ka.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				wait["blacklist"][op.param2] = True
 				f=codecs.open('st2__b.json','w','utf-8')
 				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2569,10 +2588,15 @@ def bot(op):
 				InviterX = Inviter.split(",")
 				contact = cl.getContact(op.param2)
 				ki.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				kk.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				ks.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				kc.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				ka.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.01)
 				wait["blacklist"][op.param2] = True
 				f=codecs.open('st2__b.json','w','utf-8')
 				json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
