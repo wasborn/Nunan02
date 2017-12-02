@@ -9,28 +9,13 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess
 
 cl = LINETCR.LINE()
-cl.login(token="EmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EnplZ55W8yagmSRj65G1.g6FOp0t4PxDBHY58MdDjSq.da/Qb0GgBwrrAoYS+ly7VCFNfvcWWyhDpfMwWRkXkxM=")
+ki.login(qr=True)
 ki.loginResult()
 
-kk = LINETCR.LINE()
-kk.login(token="EnlqoR53jZngu1G588Yd.2LoE6VMBQSoJV0xj2s8CRq.03L7Tvv2pNlbseF+ACSkMAvkz8UNispSy+BN1wajxdA=")
-kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token="EnaH9rkqbDjS6KFIkew2.lCQlKffPrDvJ4C9I01fB4G.vP9SHCSlIhB2LQBa8vFAoPsfCdQPgEUoujhP4brpSuE=")
-ks.loginResult()
-
-kc = LINETCR.LINE()
-kc.login(token="EnWu94hqkpos228OfOoa.otjypLFkvzc+H16E2qyN/G.kgjC8YYWr9S0iK8i8sl2yGVBx/fdeCbXU8IJecquqmY=")
-kc.loginResult()
-
-ka = LINETCR.LINE()
-ka.login(token="EnT3sW2cnspBZgHqQZTd.ADYCIMriiLUweQB6GGBn7q.v9unO5tdoxFhKkTKiYts3Nz8mHgTIDin3PU1p4aNVZ8=")
-ka.loginResult()
 
 print "login success"
 reload(sys)
@@ -96,21 +81,13 @@ helpMessage2 ="""-💕™ -
 🇹🇭[ƁԼƠƇƘƖƝƔƖƬЄ: ƠƝ/ƠƑƑ]:  
 	
 """
-KAC = [cl,ki,kk,ks,kc,ka]
+KAC = [cl,ki]
 KAB1 = ki.getProfile().mid
-KAB2 = kk.getProfile().mid
-KAB3 = ks.getProfile().mid
-KAB4 = kc.getProfile().mid
-KAB5 = ka.getProfile().mid
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
-kimid = kk.getProfile().mid
-ki2mid = ks.getProfile().mid
-Cmid = kc.getProfile().mid
-Emid = ka.getProfile().mid
 
-Bots=[mid,Amid,kimid,ki2mid,Cmid,Emid]
-admin = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+Bots=[mid,Amid]
+admin = ["u2c7f708769a2eb35d9ae9f73cEmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")d366e0b"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
