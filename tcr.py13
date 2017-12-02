@@ -1524,17 +1524,26 @@ def bot(op):
                     ks.sendText(msg.to," " + string + " ")
                     kc.sendText(msg.to," " + string + " ")
                     ka.sendText(msg.to," " + string + " ")
-#-----------------------------------------------
+#----------------------------------------------
             elif "#test" in msg.text:
-                ks.sendText(msg.to,"ok")
+                ki.sendText(msg.to,"ok")
 #-----------------------------------------------
-            elif "Sp" in msg.text:
+ #===============================================
+            elif msg.text in ["Sp","sp"]:
+                cl.sendText(msg.to, "กรุณารอ.......")
                 start = time.time()
-                cl.sendText(msg.to, "กรุณา รอ....")
+                time.sleep(0.001)
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sseconds" % (elapsed_time))
-		elapsed_time = time.time() - start
-                ki.sendText(msg.to, "%sseconds" % (elapsed_time))
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
+                print "[Command]Speed palsu executed"
+            elif msg.text in ["Bot Speed"]:
+                cl.sendText(msg.to, "กรุณารอ.......")
+                start = time.time()
+                time.sleep(0.001)
+                elapsed_time = time.time() - start
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))                   
+                print "[Command]Speed palsu executed"
+#=============================================
 #-----------------------------------------------     
 
 #=================================================
