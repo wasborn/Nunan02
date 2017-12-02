@@ -67,7 +67,7 @@ helpMessage ="""🇹🇭 ─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ �
 ❄️[Cancel]: "Cancel invite"
 ❄️[Gn: "name"]: "Change name Group"
 ❄️[NK: "Name"]: ~÷~
-❄️[Dead]: "Kick Blacklist"
+[Dead]: "Kick Blacklist"
           
 	  ─•✵꧁☢☠ℓℓஆՁՃิ☠☡꧂✵•─ 
 	  🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭 🇹🇭
@@ -87,7 +87,7 @@ mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 
 Bots=[mid,Amid]
-admin = ["u2c7f708769a2eb35d9ae9f73cEmOSezrjZn4jbJWXp4Mc.ggZ3LaX96pDQplX2qf9Fxa.7EnkPt2m+fgeoisLlgE+Ov/LfTBLQjQRZaQqLMhI8fc=")d366e0b"]
+admin = ["
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
